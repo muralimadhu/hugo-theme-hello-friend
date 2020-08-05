@@ -84,7 +84,7 @@
 
     {{ if not (eq .Params.Comments "false") }}
       {{ if or (eq .Type $.Site.Params.contentTypeName) (.Params.Comments) }}
-        {{ partial "comments.html" . }}
+        {{ partial "disqus.html" . }}
       {{ end }}
     {{ end }}
 
